@@ -5,7 +5,6 @@ import './Product.scss'
 
 const Product = ({ product }) => {
   const {name, image, price, brand, skill, type, description} = product;
-
   return (
     <div className='product'>
       <img className='product__image' src={image} alt={name}></img>

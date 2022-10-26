@@ -1,0 +1,16 @@
+@use '../../assets/scss/variables' as *;
+
+.home{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    &__slashOne{
+        color: $color-pink;
+    }
+    &__slashTwo{
+        color: $color-green;
+    }
+    &__slashThree{
+        color: $color-orange;
+    }
+}

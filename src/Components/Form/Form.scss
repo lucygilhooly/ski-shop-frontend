@@ -1,0 +1,52 @@
+@use "../../assets/scss/variables" as *;
+
+.form-container {
+  width: 40%;
+  min-width: 320px;
+  max-width: 475px;
+  background: $colour-four;
+  margin: 0 auto;
+  box-shadow: 0px 2px 5px $colour-one;
+
+  &__title {
+    width: 100%;
+    color: $colour-three;
+    font-family: "open sans condensed";
+    font-size: 1.35em;
+    display: block;
+    background: $colour-one;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0.75em 1em 0.75em 1.5em;
+    box-shadow: inset 0px 1px 1px fadeout($colour-four, 95%);
+    border: 1px solid $colour-three;
+    margin: 0;
+    font-weight: 200;
+  }
+
+  &__form {
+    display: block;
+    width: 100%;
+    padding: 2em;
+  }
+
+  &__input {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 0.5em 0;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1.25em;
+    color: $colour-four;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+
+//   &__button {
+//     @include button;
+//   }
+}

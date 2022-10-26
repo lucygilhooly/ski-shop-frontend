@@ -3,9 +3,7 @@ import { useState } from "react";
 import Main from '../../Components/Main/Main';
 
 function ViewProducts() {
-const [searchTerm, setSearchTerm] = useState(" ")
-// const [filter, setFilter] = useState(false)
-  
+const [searchTerm, setSearchTerm] = useState(" ")  
 
 const getSearchBoxValue = (event) => {
   const lowerSearchTerm = event.target.value.toLowerCase()

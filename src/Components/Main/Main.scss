@@ -9,7 +9,6 @@
 .header{
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   background-color:$colour-two;
   padding: 10px;
@@ -21,8 +20,17 @@
     font-size: 60px;
     padding-top: 10px;
     border-radius: 15px;
-    color: $colour-four;
-    text-shadow: 3px 3px $colour-three ;
+    color: black;
+
+    &--slashOne{
+        color: $color-pink;
+    }
+    &--slashTwo{
+        color: $color-green;
+    }
+    &--slashThree{
+        color: $color-orange;
+    }
   }
 
 }

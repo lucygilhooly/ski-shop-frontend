@@ -2,7 +2,6 @@ import './Main.scss'
 import ProductList from '../ProductList/ProductList'
 import DropDown from '../DropDown/DropDown'
 import SearchBox from '../SearchBox/SearchBox'
-import image from '../../assets/images/png-transparent-mountain-illustration-himalayas-mountain-snow-yulong-snow-mountain-white-cloud-mountains.png'
 
 
 import { useState } from 'react'
@@ -44,8 +43,12 @@ const Main = ({searchTerm, getSearchBoxValue}) => {
     return (
       <section className='main'>
        <section className='header'>
-        <h1 className='header__title'>SKI SHOP \\\</h1>
-        <p>{image}</p>
+        <h1 className='header__title'>SKI STORE</h1>
+        <h1 className='header__title header__title--slashOne'>\</h1>
+        <h1 className='header__title header__title--slashTwo'>\</h1>
+        <h1 className='header__title header__title--slashThree'>\</h1>
+
+        
         </section>
         <div className='main__products'>
           <SearchBox getSearchBoxValue={getSearchBoxValue}/>

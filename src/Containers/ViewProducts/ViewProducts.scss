@@ -1,0 +1,18 @@
+@use '../../assets/scss/variables' as *;
+
+.viewProducts_body {
+  background-color:$colour-two;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navBar {
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color:$colour-two;
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+@use '../../assets/scss/variables' as *;
+
+ .search-box__input {
+    border:none;
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+}
+
+
+.search-box__input:hover, .search-box__input:focus {
+        border: 1.5px solid $colour-four;
+        background-color: $colour-two;
+      }

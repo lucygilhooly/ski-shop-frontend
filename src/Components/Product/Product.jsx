@@ -1,8 +1,6 @@
 import React from 'react'
 import './Product.scss'
 
-
-
 const Product = ({ product }) => {
   
   const {name, image, price, brand, skill, type, description} = product;

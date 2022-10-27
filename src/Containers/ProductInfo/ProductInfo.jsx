@@ -1,31 +1,34 @@
-// import React from 'react'
-// import EditProduct from '../EditProduct/EditProduct';import React, { useState, useEffect } from "react";
-// import { useParams } from "react-router-dom";
+import React from 'react'
+import EditProduct from '../EditProduct/EditProduct';
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 
-// const ProductInfo = () => {
-//     const { id } = useParams();
-//     const [product, setProduct] = useState(null);
 
-//     const getProductById = async id => {
-//         const url = `http://localhost:8080/product/${id}`;
-//         const response = await fetch(url);
-//         const productData = await response.json();
-//         setProduct(productData);
-//       };
+const ProductInfo = () => {
+    const { id } = useParams();
+    const [product, setProduct] = useState(null);
 
-//       useEffect(() => {
-//         getProductById(id);
-//       }, [id]);
+    const getProductById = async id => {
+        const url = `http://localhost:8080/product/${id}`;
+        const response = await fetch(url);
+        const productData = await response.json();
+        setProduct(productData);
+      };
 
-//       if (product == null){
-//         return null;
-//       }
+      useEffect(() => {
+        getProductById(id);
+      }, [id]);
 
-//   return (
-//     <div>ProductInfo
-//         <button><EditProduct /></button>
-//     </div>
-//   )
-// }
+      if (product == null){
+        return null;
+      }
 
-// export default ProductInfo
+  return (
+    <div className=''>
+        <h1>ProductInfo</h1>
+        <button><EditProduct /></button>
+    </div>
+  )
+}
+
+export default ProductInfo

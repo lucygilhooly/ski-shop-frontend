@@ -23,7 +23,6 @@ const CreateProduct = () => {
 
   return (
     <section className="create-product">
-      <h2 className="create-product__title">Create a Product</h2>
       <Form handleSubmit={handleSubmit} defaultFormState={defaultFormState} formTitle="Add A New Product" />
     </section>
   );

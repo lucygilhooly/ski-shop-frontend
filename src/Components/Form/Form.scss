@@ -1,21 +1,16 @@
 @use "../../assets/scss/variables" as *;
 
 .form-container {
-  width: 40%;
-  min-width: 320px;
-  max-width: 475px;
-  background: $colour-four;
+  width: 60%;
   margin: 0 auto;
   box-shadow: 0px 2px 5px $colour-one;
 
   &__title {
-    width: 100%;
+    width: 94%;
     color: $colour-three;
-    font-family: "open sans condensed";
+    font-family: sans-serif;
     font-size: 1.35em;
     display: block;
-    background: $colour-one;
-    width: 100%;
     text-transform: uppercase;
     padding: 0.75em 1em 0.75em 1.5em;
     box-shadow: inset 0px 1px 1px fadeout($colour-four, 95%);
@@ -33,11 +28,11 @@
   &__input {
     display: block;
     margin: auto auto;
-    width: 100%;
+    width: 80%;
     margin-bottom: 2em;
     padding: 0.5em 0;
     border: none;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid $color-orange;
     padding-bottom: 1.25em;
     color: $colour-four;
     

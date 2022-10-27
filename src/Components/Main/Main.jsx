@@ -2,11 +2,8 @@ import './Main.scss'
 import ProductList from '../ProductList/ProductList'
 import DropDown from '../DropDown/DropDown'
 import SearchBox from '../SearchBox/SearchBox'
-
-
 import { useState } from 'react'
 import { useEffect } from 'react'
-import Nav from '../Nav/Nav'
 
 
 const Main = ({searchTerm, getSearchBoxValue}) => {
@@ -45,13 +42,6 @@ const Main = ({searchTerm, getSearchBoxValue}) => {
 
     return (
       <section className='main'>
-       <section className='header'>
-        <h1 className='header__title'>SKI STORE</h1>
-        <h1 className='header__title header__title--slashOne'>\</h1>
-        <h1 className='header__title header__title--slashTwo'>\</h1>
-        <h1 className='header__title header__title--slashThree'>\</h1>
-        </section>
-      
         <div className='main__products'>
             <div className='sidebar'>
           <SearchBox getSearchBoxValue={getSearchBoxValue}/>

@@ -3,35 +3,10 @@
   display: grid;
   grid-template-columns: 1fr 4fr;
   flex-wrap: wrap;
-  background-color: lightblue;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  font-family: "Roboto";
-  border: 8px solid lightblue;
-  background-color: lightblue;
-}
-.header__title {
-  font-size: 60px;
-  padding-top: 10px;
-  border-radius: 15px;
-  color: black;
-}
-.header__title--slashOne {
-  color: #f056bf;
-}
-.header__title--slashTwo {
-  color: greenyellow;
-}
-.header__title--slashThree {
-  color: orange;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }

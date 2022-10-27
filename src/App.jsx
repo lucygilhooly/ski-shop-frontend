@@ -1,19 +1,21 @@
 import "./App.scss";
 import ViewProducts from "./Containers/ViewProducts/ViewProducts";
 import Home from "./Containers/Home/Home";
-// import Nav from "./Components/Nav/Nav";
+import Nav from "./Components/Nav/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CreateProduct from "./Containers/CreateProduct/CreateProduct";
 import EditProduct from "./Containers/EditProduct/EditProduct";
+// import ProductInfo from "./Containers/ProductInfo/ProductInfo";
 
 
 function App() {
   return (
     <Router>
-      {/* <Nav /> */}
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<ViewProducts />} />
+        {/* <Route path="/product/:id" element={<ProductInfo />} /> */}
         <Route path="/product/create" element={<CreateProduct />} />
         <Route path="/product/edit/:id" element={<EditProduct />} />
       </Routes>

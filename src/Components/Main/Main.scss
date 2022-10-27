@@ -5,43 +5,9 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     flex-wrap: wrap;
-    background-color: lightblue;
-}
-
-.header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  font-family: 'Roboto';
-  border: 8px solid lightblue;
-  background-color: lightblue;
-
-  &__title{
-    font-size: 60px;
-    padding-top: 10px;
-    border-radius: 15px;
-    color: black;
-
-    &--slashOne{
-        color: $color-pink;
-    }
-    &--slashTwo{
-        color: $color-green;
-    }
-    &--slashThree{
-        color: $color-orange;
-    }
-  }
-
 }
 .sidebar{
     display: flex;
     flex-direction: column;
-    
+    margin:10px;    
 }
-
-
-
-
-

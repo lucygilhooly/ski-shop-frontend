@@ -1,10 +1,11 @@
+import './DropDown.scss'
 const DropDown = ({ options, onChange }) => {
 
 
 
     return (
-      <div className="dropDown">
-        <select onChange={onChange}>
+      <div >
+        <select className="dropDown" onChange={onChange}>
         <option value="">All Product Types</option>
           {options.map(option => (
             <option key={option} value={option.toLowerCase()}>

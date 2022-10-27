@@ -1,0 +1,14 @@
+.search-box__input {
+  border: none;
+  width: 90%;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.box {
+  padding-bottom: 10px;
+}
+
+.search-box__input:hover, .search-box__input:focus {
+  border: 2px solid greenyellow;
+}

@@ -6,6 +6,7 @@ import SearchBox from '../SearchBox/SearchBox'
 
 import { useState } from 'react'
 import { useEffect } from 'react'
+import Nav from '../Nav/Nav'
 
 
 const Main = ({searchTerm, getSearchBoxValue}) => {
@@ -35,11 +36,13 @@ const Main = ({searchTerm, getSearchBoxValue}) => {
 
 
   const filterProducts = (products, searchTerm) => {
-   return products.filter((product) => product.name.toLowerCase().includes(searchTerm.toLowerCase()))
-    
+   const searchByName = products.filter((product) => product.name.toLowerCase().includes(searchTerm.toLowerCase()))
+     if (selectedType != null){
+       return searchByName.filter((product) => product.type.toLowerCase().includes(selectedType.toLowerCase()))
+     }
+     return searchByName;
   }
-  console.log(selectedType)
- 
+
     return (
       <section className='main'>
        <section className='header'>
@@ -50,11 +53,15 @@ const Main = ({searchTerm, getSearchBoxValue}) => {
         </section>
       
         <div className='main__products'>
+            <div className='sidebar'>
+         <Nav className='nav'/>
           <SearchBox getSearchBoxValue={getSearchBoxValue}/>
           <form className="main__products--form">
          <DropDown options={types} onChange={handleSelectType}/>
          </form>
+         </div>
           <ProductList products={filterProducts(products, searchTerm)}/>
+          {/* handleSelectProduct={handleSelectProduct} product={product}  */}
         </div>
      </section>
   )

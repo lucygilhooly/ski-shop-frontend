@@ -54,7 +54,6 @@ const Main = ({searchTerm, getSearchBoxValue}) => {
       
         <div className='main__products'>
             <div className='sidebar'>
-         <Nav className='nav'/>
           <SearchBox getSearchBoxValue={getSearchBoxValue}/>
           <form className="main__products--form">
          <DropDown options={types} onChange={handleSelectType}/>

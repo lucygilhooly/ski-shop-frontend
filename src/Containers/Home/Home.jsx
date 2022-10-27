@@ -1,5 +1,4 @@
 import React from 'react'
-import ViewProducts from '../ViewProducts/ViewProducts'
 import './Home.scss'
 
 const Home = () => {

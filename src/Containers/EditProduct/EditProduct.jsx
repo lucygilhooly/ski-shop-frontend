@@ -9,6 +9,7 @@ const EditProduct = () => {
   const navigate = useNavigate();
   const [product, setProduct] = useState(null);
   const [showForm, setShowForm] = useState(false);
+  console.log(id)
 
   const getProductById = async id => {
     const url = `http://localhost:8080/product/${id}`;
@@ -58,6 +59,10 @@ const EditProduct = () => {
   };
 
   const handleShowForm = () => setShowForm(!showForm);
+
+  if(product == null){
+    return null
+  }
 
 
   return (

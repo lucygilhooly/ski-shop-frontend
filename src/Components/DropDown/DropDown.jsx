@@ -3,7 +3,7 @@ const DropDown = ({ options, onChange }) => {
 
 
     return (
-      <>
+      <div className="dropDown">
         <select onChange={onChange}>
         <option value="">All Product Types</option>
           {options.map(option => (
@@ -12,7 +12,7 @@ const DropDown = ({ options, onChange }) => {
             </option>
           ))}
         </select>
-      </>
+      </div>
     );
   };
   

@@ -63,7 +63,7 @@ const EditProduct = () => {
   return (
     <section className="edit-product">
       <h2 className="edit-product__title">Edit Product</h2>
-      <div className="edit-gproduct__content">
+      <div className="edit-product__content">
         <Product product={product} />
         <div className="edit-product__buttons">
           <button

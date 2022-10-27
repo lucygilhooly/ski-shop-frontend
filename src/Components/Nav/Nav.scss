@@ -14,13 +14,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-      font-size: 18px;
+      font-size: 30px;
       height: 20%;
       margin: 10px;
       text-decoration: none;
       font-weight: bold;
       color: black;
-      border: 2px solid $color-orange;
+    
       border-radius: 5px;
       padding :5px;
       margin-right: 20px;
@@ -28,6 +28,9 @@
       // &--home{
       //     font-size: 30px;
       // }
+    }
+    &__item:hover{
+        border: 2px solid $color-orange;
     }
   }
   .links{

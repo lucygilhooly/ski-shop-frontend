@@ -11,7 +11,7 @@ const Product = ({ product }) => {
       <img className='product__image' src={image} alt={name}></img>
       <h1 className='product__name'>{name}</h1>
       <div className='product__info'>
-        <p>{brand}</p>
+
             <Link key={product.id} to={`/product/info/${product.id}`}>
               More Info
             </Link>

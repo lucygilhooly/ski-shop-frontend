@@ -1,23 +1,23 @@
 import React from 'react'
-import './Product.scss'
-import { Link } from "react-router-dom";
+import './ProductDescription.scss'
 
 
-const Product = ({ product }) => {
+const ProductDescription = ({ product }) => {
   
-  const {name, image, brand} = product;
+  const {name, image, price, brand, skill, type, description} = product;
   return (
     <div className='product'>
       <img className='product__image' src={image} alt={name}></img>
       <h1 className='product__name'>{name}</h1>
       <div className='product__info'>
+        <p>£{price}</p>
+        <p>{description}</p>
         <p>{brand}</p>
-            <Link key={product.id} to={`/product/info/${product.id}`}>
-              More Info
-            </Link>
+        <p>{skill}</p>
+        
       </div>
     </div>
   )
 }
 
-export default Product;
+export default ProductDescription;

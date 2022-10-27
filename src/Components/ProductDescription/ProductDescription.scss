@@ -1,0 +1,46 @@
+@use '../../assets/scss/variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+.product {
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $colour-one;
+    text-decoration: none;
+
+   &__image{
+    height: 25vh;
+    padding:5px;
+    text-decoration: none;
+
+   }
+
+   &__name{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: black;
+    text-decoration: none;
+
+
+   }
+
+   &__info{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+   }
+}

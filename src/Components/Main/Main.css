@@ -3,17 +3,17 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: lightblue;
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d0d0f9;
   padding: 10px;
-  margin: 20px;
   font-family: "Roboto";
-  border-radius: 15px;
+  border: 8px solid lightblue;
+  background-color: lightblue;
 }
 .header__title {
   font-size: 60px;

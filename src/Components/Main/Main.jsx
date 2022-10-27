@@ -47,9 +47,8 @@ const Main = ({searchTerm, getSearchBoxValue}) => {
         <h1 className='header__title header__title--slashOne'>\</h1>
         <h1 className='header__title header__title--slashTwo'>\</h1>
         <h1 className='header__title header__title--slashThree'>\</h1>
-
-        
         </section>
+      
         <div className='main__products'>
           <SearchBox getSearchBoxValue={getSearchBoxValue}/>
           <form className="main__products--form">

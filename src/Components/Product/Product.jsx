@@ -12,9 +12,9 @@ const Product = ({ product }) => {
       <div className='product__info'>
         <p>£{price}</p>
         <p>{brand}</p>
-        <p>{skill}</p>
+        {/* <p>{skill}</p>
         <p>{type}</p>
-        <p>{description}</p>
+        <p>{description}</p> */}
       </div>
     </div>
   )

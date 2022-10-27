@@ -4,17 +4,17 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: lightblue;
 }
 
 .header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:$colour-two;
   padding: 10px;
-  margin:20px;
   font-family: 'Roboto';
-  border-radius: 15px;
+  border: 8px solid lightblue;
+  background-color: lightblue;
 
   &__title{
     font-size: 60px;
@@ -34,3 +34,4 @@
   }
 
 }
+

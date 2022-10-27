@@ -8,7 +8,9 @@ const Home = () => {
     <h1 className='home__slashOne'>\</h1>
     <h1 className='home__slashTwo'>\</h1>
     <h1 className='home__slashThree'>\</h1>
+    
     </div>
+    
   )
 }
 

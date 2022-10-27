@@ -1,5 +1,3 @@
-@use '../../assets/scss/variables' as *;
-
 .viewProducts_body {
   height: 100%;
   display: grid;
